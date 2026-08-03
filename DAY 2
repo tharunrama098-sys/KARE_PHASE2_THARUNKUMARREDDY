@@ -4,7 +4,7 @@ class Main{
     public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
        if(true)
-       System.out.print("Gouse");
+       System.out.print("Tharun");
        else
        System.out.print("No name");
     }
@@ -42,7 +42,7 @@ class Main{
     Scanner sc = new Scanner(System.in);
        if(2+2==4)
        System.out.println("hi");
-       System.out.println(" GOuse");
+       System.out.println(" THarun");
        else
        System.out.println("Sorry");
     }
