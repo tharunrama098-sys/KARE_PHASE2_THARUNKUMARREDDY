@@ -9,6 +9,7 @@ public class Main
 {
 	public static void main(String[] args) {
 	    Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a number: ");
 	    int count=0;
 		int n=sc.nextInt();
 		while(n!=0){
@@ -28,7 +29,8 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
- 		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a number: ");
+ 		
 		int n=sc.nextInt();
 	    int ec=0,od=0;
 	    int d;
