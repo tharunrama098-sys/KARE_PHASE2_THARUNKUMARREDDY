@@ -28,6 +28,7 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+ 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 	    int ec=0,od=0;
 	    int d;
@@ -54,7 +55,7 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		Sstem.out.print("Enter a number: ");
+		System.out.print("Enter a number: ");
 		int n=sc.nextInt();
 		int d=0;
 		int count=0;
