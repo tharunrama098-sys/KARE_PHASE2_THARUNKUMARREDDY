@@ -1,0 +1,221 @@
+//2d array input print
+import java.util.*;
+public class Matrix2d{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows: ");
+        int r=sc.nextInt();
+        System.out.print("ENter no.of columns: ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+
+    }
+}
+//sum of 2d array elemnts
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows: ");
+        int r=sc.nextInt();
+        System.out.print("ENter no.of columns: ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }int sum=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                sum=sum+arr[i][j];
+            }
+        }
+        System.out.print("Sum of array elements is: "+sum);
+    }
+}
+Enter no.of rows: 3
+ENter no.of columns: 3
+1
+2
+3
+4
+5
+6
+7
+8
+0
+Sum of array elements is: 36
+//print only diagonal
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of sqaure diagonal n value : ");
+        int n=sc.nextInt();
+        int arr[][]=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i][i]);    
+        }
+        System.out.println();
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i][n-1-i]);
+        }
+    }
+}
+Enter no.of sqaure diagonal n value : 3
+1 2 3
+4 5 6
+7 8 9
+159
+357
+//transpose 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter rows value : ");
+        int r=sc.nextInt();
+        System.out.println("Enter colms value : ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        int trans[][]=new int[c][r];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                trans[i][j]=arr[j][i];
+            }
+        }
+        System.out.println("Transpose of a Matrix:");
+        for(int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                System.out.print(trans[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+Enter rows value : 
+3
+Enter colms value : 
+3
+1 2 3
+1 2 4 5 6
+6 7 8 9
+Transpose of a Matrix:
+1 4 7 
+2 5 8 
+3 6 9 
+
+/*
+lengh of a string without a inbuilt method
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=0;
+        for(char ch:s.toCharArray()){
+            count++;
+        }
+        System.out.print(count);
+	}
+}
+
+gouse
+5
+
+/*
+how many words are there in sentences
+//logic get to know about spaces then +1 for count 
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=0;
+        for(char ch:s.toCharArray()){
+            if(ch==' '){
+                count++;
+            }
+        }
+        System.out.print(count+1);
+	}
+}
+
+hello every body welcome to my party
+7
+
+/*
+WJP to find the vowels count and consonents
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toUpperCase();
+        int count=0,conso=0;
+        for(char ch:s.toCharArray()){
+            if(ch== 'A'|| ch== 'E' || ch== 'I' ||ch== 'O' || ch== 'U'){
+                count++;
+            }else{
+                conso++;
+            }
+        }
+        System.out.print("vowel count"+count+"\n"+"consonents"+conso);
+	}
+}
+
+aeiouxyzpre
+vowel count5
+consonents6
+
+/*
+WJP to rverse a string
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        char ch[]=str.toCharArray();
+        int s=0;
+        int e=ch.length -1;
+        while(s<e){
+            char temp=ch[s];
+            ch[s]=ch[e];
+            ch[e]=temp;
+            s++;
+            e--;
+        }
+        System.out.print(new String(ch));
+	}
+}
